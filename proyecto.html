@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacén de Ropa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .main-content .product, .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 1em 0;
+            padding: 1em;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product img, .gallery-item img {
+            max-width: 100%;
+        }
+        .testimonial, .special-offer {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 1em 0;
+            padding: 1em;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 1em 0;
+            padding: 1em;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container form input, .form-container form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container form button:hover {
+            background-color: #555;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Almacén de Ropa</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#special-offers">Ofertas Especiales</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home">
+            <h2>Bienvenido a nuestro almacén de ropa</h2>
+            <p>Encuentra las últimas tendencias y ofertas en ropa. Calidad garantizada y precios accesibles.</p>
+        </section>
+
+        <section id="products" class="main-content">
+            <div class="product">
+                <img src="camisa de moda.webp" alt="Camisa de moda">
+                <h3>Camisa de Moda</h3>
+                <p>Camisa elegante y cómoda para cualquier ocasión. Disponible en varios colores.</p>
+                <p>Precio: $29.99</p>
+            </div>
+            <div class="product">
+                <img src="pantalones casuales.jfif" alt="Pantalones Casual">
+                <h3>Pantalones Casual</h3>
+                <p>Pantalones versátiles para uso diario. Hechos de algodón suave.</p>
+                <p>Precio: $39.99</p>
+            </div>
+            <div class="product">
+                <img src="chaqueta elegante.jpg" alt="Chaqueta Elegante">
+                <h3>Chaqueta Elegante</h3>
+                <p>Chaqueta de alta calidad ideal para eventos especiales. Disponible en tamaños grandes.</p>
+                <p>Precio: $89.99</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Galería de Productos</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="zapatos clasicos.jpg" alt="Zapatos clasicos">
+                    <h3>Zapatos clasicos</h3>
+                    <p>Piel de calidad, estilo eterno.</p>
+                    <p>Precio: $59.99</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="gorras.jfif" alt="Gorras">
+                    <h3>Gorras</h3>
+                    <p>Gorras exclusivas totalmente cerradas.</p>
+                    <p>Precio: $89.99</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="bolsos.jfif" alt="Bolsos">
+                    <h3>Bolsos</h3>
+                    <p>Lindos bolsos de cuero para mujer.</p>
+                    <p>Precio: $69.99</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonios de Clientes</h2>
+            <div class="testimonial">
+                <p>"Excelente calidad y precios justos. ¡Definitivamente volveré a comprar!" - Ana Pérez</p>
+            </div>
+            <div class="testimonial">
+                <p>"Un lugar increíble para encontrar ropa de moda. ¡El servicio al cliente es excepcional!" - Juan López</p>
+            </div>
+            <div class="testimonial">
+                <p>"Siempre encuentro lo que necesito aquí. ¡Recomendado!" - Marta González</p>
+            </div>
+        </section>
+
+        <section id="special-offers">
+            <h2>Ofertas Especiales</h2>
+            <div class="special-offer">
+                <h3>Oferta del Mes</h3>
+                <p>¡Compra una chaqueta y recibe un 20% de descuento en la segunda prenda!</p>
+                <p>Oferta válida hasta el 30 de agosto de 2024.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Para consultas y pedidos, por favor contáctanos a través de los siguientes medios:</p>
+            <p>Email: <a href="maillerestebanpajaro2007@gmail.com">maillerestebanpajaro2007@gmail.com</a></p>
+            <p>Teléfono: +57 3118805182</p>
+            <p>Dirección: Plaza principal, Pais: Colombia, Arjona Bolivar</p>
+
+            <div class="form-container">
+                <h3>Envíanos un mensaje</h3>
+                <form action="submit_form.php" method="post">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu email" required>
+                    <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Almacén de Ropa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
